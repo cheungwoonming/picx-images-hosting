@@ -21,5 +21,5 @@ def reindex_img(root_path):
         os.rename(root_path + f, root_path + f'image-{str(index+1).zfill(3)}.{add_format}')
 
 
-reindex_img('./Genshin_img/')
+reindex_img('./BigBG_img/')
 
