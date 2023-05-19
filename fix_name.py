@@ -6,11 +6,12 @@ def ai_image():
     file_name = os.listdir(root_path)
 
     for f in file_name:
-        new_f = f.split('.')[0]
-        new_f = new_f.split('-')
-        new_f[2] = new_f[2].replace('(', '').replace(')', '').zfill(3)
-
-        os.rename(root_path+f, root_path+'-'.join(new_f)+'.png')
+        # new_f = f.split('.')[0]
+        # new_f = new_f.split('-')
+        # new_f[2] = new_f[2].replace('(', '').replace(')', '').zfill(3)
+        # os.rename(root_path+f, root_path+'-'.join(new_f)+'.png')
+        new_f = f.replace('-0000', '')
+        os.rename(root_path + f, root_path + new_f)
 
 
 def reindex_img(root_path):
@@ -21,5 +22,15 @@ def reindex_img(root_path):
         os.rename(root_path + f, root_path + f'image-{str(index+1).zfill(3)}.{add_format}')
 
 
-reindex_img('./BigBG_img/')
+def rename_jfif2jpg():
+    root_path = './temp/'
+    file_name = os.listdir(root_path)
 
+    for f in file_name:
+        new_f = f.replace('jfif', 'jpg')
+        os.rename(root_path + f, root_path + new_f)
+
+
+# ai_image()
+reindex_img('./AI_img2/')
+# rename_jfif2jpg()
