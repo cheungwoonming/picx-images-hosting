@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-08T09:28:03.645Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="oEK4Pgaath6AKMsvkImy" version="21.6.6" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-08-08T09:50:38.640Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="QJilNu9lFBpXDYVbuPus" version="21.6.6" type="github" pages="3">
   <diagram name="整体工作流程" id="6svsY7AYi6eWxs9cwY4M">
     <mxGraphModel dx="1185" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -191,17 +191,17 @@
         <mxCell id="8KKMYVU3bHa0hRRqsVrM-2" value="人工构造一批few-shot样本池" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="82" y="610" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jSN4fC_e8fdfGyuPKQl--7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8KKMYVU3bHa0hRRqsVrM-3" target="jSN4fC_e8fdfGyuPKQl--1">
+        <mxCell id="5L6CSHoUNtJC-aSqBn-k-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8KKMYVU3bHa0hRRqsVrM-3" target="jSN4fC_e8fdfGyuPKQl--1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="420" y="700" />
               <mxPoint x="420" y="800" />
-              <mxPoint x="256" y="800" />
+              <mxPoint x="255" y="800" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="jSN4fC_e8fdfGyuPKQl--12" value="随机抽2个" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jSN4fC_e8fdfGyuPKQl--7">
-          <mxGeometry x="0.273" relative="1" as="geometry">
+        <mxCell id="5L6CSHoUNtJC-aSqBn-k-2" value="随机抽2个" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5L6CSHoUNtJC-aSqBn-k-1">
+          <mxGeometry x="0.3525" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -227,7 +227,7 @@
             <mxPoint x="17" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="jSN4fC_e8fdfGyuPKQl--1" value="&lt;div style=&quot;font-size: 6px;&quot;&gt;few-shot Prompt&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.29492753623188145;align=center;" vertex="1" parent="1">
+        <mxCell id="jSN4fC_e8fdfGyuPKQl--1" value="&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;b&gt;few-shot Prompt&lt;/b&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.29492753623188145;align=center;" vertex="1" parent="1">
           <mxGeometry x="180" y="830" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="jSN4fC_e8fdfGyuPKQl--5" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font color=&quot;#808080&quot;&gt;根据下列样例相似的其他样本，尽可能给出多元化的样本，要求：&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font color=&quot;#808080&quot;&gt;前缀词为1个字。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font color=&quot;#808080&quot;&gt;构造场景中可考虑的因素：&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font color=&quot;#808080&quot;&gt;天气（包括：晴天、阴天、大雨、中雨、大雨、暴雨、小雪、大雪、沙尘暴、霾等），温度（包括最高温度和最低温度），体感（包括：极寒、寒冷、冷、凉爽、舒适、炎热、高温），空气湿度（包括：极度干燥、重度干燥、干燥、舒适、湿润、潮湿）；&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font color=&quot;#808080&quot; style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;推荐query必须为电商领域的推荐query&lt;/span&gt;。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font color=&quot;#808080&quot; style=&quot;border-color: var(--border-color);&quot;&gt;（1）sample1&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font color=&quot;#808080&quot; style=&quot;border-color: var(--border-color);&quot;&gt;（2）sample2&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font color=&quot;#808080&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;····&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font color=&quot;#808080&quot; style=&quot;border-color: var(--border-color);&quot;&gt;续写10个样本：&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeColor=#999999;" vertex="1" parent="1">
@@ -283,7 +283,7 @@
         <mxCell id="kO33aeQMzPuv-D8IF8nz-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="kO33aeQMzPuv-D8IF8nz-10" target="kO33aeQMzPuv-D8IF8nz-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="kO33aeQMzPuv-D8IF8nz-10" value="利用LLM的few-shot能力，根据instruction生成对应的input和output。&lt;br&gt;分类任务和非分类任务的prompt顺序不一样。" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;strokeColor=#990099;align=left;spacing=6;" vertex="1" parent="1">
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-10" value="利用LLM的few-shot能力，根据instruction生成多组对应的input和output。&lt;br&gt;分类任务和非分类任务的prompt顺序不一样。" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;strokeColor=#990099;align=left;spacing=6;" vertex="1" parent="1">
           <mxGeometry x="391" y="380" width="169" height="80" as="geometry" />
         </mxCell>
         <mxCell id="kO33aeQMzPuv-D8IF8nz-11" value="第三步：样本生成" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
