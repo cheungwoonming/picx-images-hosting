@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-08T07:18:56.127Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="R47nufa8mxUoX1NvdqR7" version="21.6.6" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-08-08T08:36:22.240Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="lmgGMyskSnNGcA2eb0oX" version="21.6.6" type="github" pages="3">
   <diagram name="整体工作流程" id="6svsY7AYi6eWxs9cwY4M">
     <mxGraphModel dx="1185" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -181,10 +181,58 @@
     </mxGraphModel>
   </diagram>
   <diagram id="02bdX0pCvZJO8fWcMHTU" name="self-instruuction">
-    <mxGraphModel dx="2074" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="988" dy="535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-1" value="（1）人工标注成本过高；&lt;br&gt;（2）标注的数据缺乏多样性" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="61" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-2" value="&lt;font color=&quot;#0000ff&quot;&gt;instruction&lt;/font&gt;：描述任务的形式&lt;br&gt;&lt;font color=&quot;#00994d&quot;&gt;input&lt;/font&gt;：该任务中一个子样本的输入，可无&lt;br&gt;&lt;font color=&quot;#00994d&quot;&gt;output&lt;/font&gt;：该任务中一个子样本的输出" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=none;dashed=1;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="111" y="140" width="239" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-3" value="解决的问题：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="96" y="59" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-4" value="完整样本的三个要素：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="110" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="kO33aeQMzPuv-D8IF8nz-5" target="kO33aeQMzPuv-D8IF8nz-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-5" value="利用LLM的few-shot能力，构造新的instruction。&lt;br&gt;目的：增加任务的多样性" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;strokeColor=#990099;align=left;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="111" y="240" width="169" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-6" value="第一步：生成指令" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="210" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.79;entryY=0.944;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="kO33aeQMzPuv-D8IF8nz-7" target="kO33aeQMzPuv-D8IF8nz-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-7" value="利用LLM的few-shot能力，判断第一步生成的instruction是否为分类任务。&lt;br&gt;目的：为第三步做铺垫" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;strokeColor=#990099;align=left;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="391" y="240" width="169" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-8" value="第二步：判断是否为分类任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="380" y="210" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="kO33aeQMzPuv-D8IF8nz-10" target="kO33aeQMzPuv-D8IF8nz-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-10" value="利用LLM的few-shot能力，根据instruction生成对应的input和output。&lt;br&gt;分类任务和非分类任务的prompt顺序不一样。" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;strokeColor=#990099;align=left;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="391" y="380" width="169" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-11" value="第三步：样本生成" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="380" y="350" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-12" value="计算两两样本之间的Rouge-L相似度剔除重复样本&lt;br&gt;目的：提高数据质量" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;strokeColor=#990099;align=left;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="111" y="380" width="169" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-13" value="第四步：过滤低质量和重复样本" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="350" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kO33aeQMzPuv-D8IF8nz-16" value="全程使用GPT3（openai接口），用GPT3生成的数据训练GPT3，所以叫self-instruction&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;关键在于base-LLM已经足够强大。&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="475" width="480" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
