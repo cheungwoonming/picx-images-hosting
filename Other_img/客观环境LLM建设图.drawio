@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-08T08:36:22.240Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="lmgGMyskSnNGcA2eb0oX" version="21.6.6" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-08-08T09:15:51.032Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="HPVoxFWEhQigztubeXHp" version="21.6.6" type="github" pages="3">
   <diagram name="整体工作流程" id="6svsY7AYi6eWxs9cwY4M">
     <mxGraphModel dx="1185" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -176,6 +176,71 @@
         </mxCell>
         <mxCell id="-FmtH7XlxLE_2CYFFByu-15" value="抽取，人工标注过滤" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=default;fillColor=none;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
           <mxGeometry x="165" y="520" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jSN4fC_e8fdfGyuPKQl--6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.497;exitY=0.814;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="8KKMYVU3bHa0hRRqsVrM-1" target="jSN4fC_e8fdfGyuPKQl--1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jSN4fC_e8fdfGyuPKQl--11" value="随机抽8个" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jSN4fC_e8fdfGyuPKQl--6">
+          <mxGeometry x="-0.2433" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8KKMYVU3bHa0hRRqsVrM-1" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;前缀词：冰。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;构造场景：现在天气为晴，气温超过35度，&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;太阳猛烈，基于前缀词更适合搜索冰袖。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;推荐query：冰袖&lt;/font&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;align=left;spacing=6;fontSize=10;strokeColor=#00994D;" vertex="1" parent="1">
+          <mxGeometry x="82" y="640" width="298" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8KKMYVU3bHa0hRRqsVrM-2" value="人工构造一批few-shot样本池" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="82" y="610" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jSN4fC_e8fdfGyuPKQl--7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8KKMYVU3bHa0hRRqsVrM-3" target="jSN4fC_e8fdfGyuPKQl--1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="700" />
+              <mxPoint x="420" y="800" />
+              <mxPoint x="256" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jSN4fC_e8fdfGyuPKQl--12" value="随机抽2个" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jSN4fC_e8fdfGyuPKQl--7">
+          <mxGeometry x="0.273" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8KKMYVU3bHa0hRRqsVrM-3" value="&lt;div style=&quot;border-color: var(--border-color); font-size: 11px;&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;前缀词：&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); font-size: 11px;&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;构造场景：&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); font-size: 11px;&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;推荐query：&lt;/font&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;strokeColor=#990099;align=left;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="470" y="645" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="jSN4fC_e8fdfGyuPKQl--10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.445;entryY=0.93;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8KKMYVU3bHa0hRRqsVrM-5" target="8KKMYVU3bHa0hRRqsVrM-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jSN4fC_e8fdfGyuPKQl--14" value="去重、写入" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jSN4fC_e8fdfGyuPKQl--10">
+          <mxGeometry x="-0.1101" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8KKMYVU3bHa0hRRqsVrM-5" value="LLM&lt;br&gt;（chatGPT、chatGLM2）" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="480" y="830" width="196" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jSN4fC_e8fdfGyuPKQl--9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jSN4fC_e8fdfGyuPKQl--1" target="8KKMYVU3bHa0hRRqsVrM-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jSN4fC_e8fdfGyuPKQl--13" value="生成10个" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jSN4fC_e8fdfGyuPKQl--9">
+          <mxGeometry x="-0.1755" y="1" relative="1" as="geometry">
+            <mxPoint x="17" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jSN4fC_e8fdfGyuPKQl--1" value="&lt;div style=&quot;font-size: 6px;&quot;&gt;few-shot Prompt&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.29492753623188145;align=center;" vertex="1" parent="1">
+          <mxGeometry x="180" y="830" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jSN4fC_e8fdfGyuPKQl--5" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#808080&quot;&gt;给出与下列样例相似的其他样本，尽可能给出多元化的样本，要求：&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 11px;&quot; color=&quot;#808080&quot;&gt;前缀词为1个字。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#808080&quot;&gt;构造场景中可考虑的因素：天气，温度，体感，空气湿度，当前时间点，日期节日，用户当前所在地区；&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#808080&quot;&gt;推荐query必须为电商系统中可能出现的query。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#808080&quot;&gt;（1）sample1&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#808080&quot;&gt;（2）sample2&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font color=&quot;#808080&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;····&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#808080&quot;&gt;续写10个样本：&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="85" y="920" width="555" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jSN4fC_e8fdfGyuPKQl--8" value="LLM构造的样本池" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="470" y="615" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jSN4fC_e8fdfGyuPKQl--17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.484;entryY=0.912;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.258;exitY=-0.004;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="jSN4fC_e8fdfGyuPKQl--5" target="jSN4fC_e8fdfGyuPKQl--1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="860" as="sourcePoint" />
+            <mxPoint x="370" y="810" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
