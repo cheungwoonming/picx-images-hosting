@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-27T13:21:20.846Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="UBN0VyS17aUV73udnfBJ" version="21.6.9" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-08-27T17:00:01.040Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="Bhbq5a1F8P8sMg5XlzrJ" version="21.6.9" type="github" pages="4">
   <diagram name="整体工作流程" id="6svsY7AYi6eWxs9cwY4M">
     <mxGraphModel dx="883" dy="489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -140,7 +140,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="QY3gI__UVawmeQXpaZvP" name="样本标注">
-    <mxGraphModel dx="2074" dy="1150" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1306" dy="830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
