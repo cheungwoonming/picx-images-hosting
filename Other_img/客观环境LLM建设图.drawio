@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-27T05:37:25.822Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="RWQHAqVw9hFYMZBXDjS2" version="21.6.9" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-08-27T13:21:20.846Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="UBN0VyS17aUV73udnfBJ" version="21.6.9" type="github" pages="4">
   <diagram name="整体工作流程" id="6svsY7AYi6eWxs9cwY4M">
     <mxGraphModel dx="883" dy="489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -63,7 +63,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="整体方案" id="KTLWespzYwjSxPvgtRJj">
-    <mxGraphModel dx="1092" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="687" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="8yJ_tZLjzriOQFs45dHv-0" />
         <mxCell id="8yJ_tZLjzriOQFs45dHv-1" parent="8yJ_tZLjzriOQFs45dHv-0" />
@@ -73,7 +73,7 @@
         <mxCell id="8yJ_tZLjzriOQFs45dHv-3" value="&lt;b style=&quot;&quot;&gt;分析可用的客观世界因素&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="8yJ_tZLjzriOQFs45dHv-1">
           <mxGeometry x="128" y="298" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8yJ_tZLjzriOQFs45dHv-4" value="&lt;div style=&quot;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;完全人工标注&lt;/font&gt;：外包人员 -&amp;gt; 标注数据&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;真实数据抽取+人工标注&lt;/font&gt;：淘宝搜索历史 + 外包人员 -&amp;gt; 标注数据&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;background-color: initial;&quot; color=&quot;#0000ff&quot;&gt;样本生成Prompt+人工标注&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;：LLM + 外包人员 -&amp;gt; 标注数据&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;" vertex="1" parent="8yJ_tZLjzriOQFs45dHv-1">
+        <mxCell id="8yJ_tZLjzriOQFs45dHv-4" value="&lt;div style=&quot;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;完全人工标注&lt;/font&gt;：外包人员 -&amp;gt; 标注数据&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;真实数据抽取+人工标注&lt;/font&gt;：淘宝搜索历史 + 外包人员 -&amp;gt; 标注数据&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;background-color: initial;&quot; color=&quot;#0000ff&quot;&gt;LLM样本生成+人工标注&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;：LLM + 外包人员 -&amp;gt; 标注数据&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;" vertex="1" parent="8yJ_tZLjzriOQFs45dHv-1">
           <mxGeometry x="122" y="628" width="360" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8yJ_tZLjzriOQFs45dHv-5" value="&lt;b style=&quot;&quot;&gt;样本标注&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="8yJ_tZLjzriOQFs45dHv-1">
